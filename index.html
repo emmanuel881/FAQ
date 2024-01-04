@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ accordion</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topSection">
+      <img src="./assets/images/background-pattern-desktop.svg" alt="" />
+    </div>
+    <div class="bottomSection">
+      <div class="container">
+        <div class="title">
+          <img src="./assets/images/icon-star.svg" alt="" />
+          <h1>FAQs</h1>
+        </div>
+        <div class="subTitle">
+          <div class="infoTit">
+            <h5 onclick="hideshow()">
+              What is Frontend Mentor and how will it help me?
+            </h5>
+            <img src="./assets/images/icon-minus.svg" alt="Sign" id="Plus1" />
+          </div>
+          <p class="para" id="para1">
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve thier fontend coding skills with projects in
+            HTML, CSS, Javascript. It's suitable for all and ideal for portfolio
+            building.
+          </p>
+        </div>
+        <div class="ruler"></div>
+        <div class="subTitle">
+          <div class="infoTit">
+            <h5>Is Frontend Mentor free?</h5>
+            <img src="./assets/images/icon-plus.svg" alt="Sign" id="Plus2" />
+          </div>
+          <p class="para" id="para2"></p>
+        </div>
+        <div class="ruler"></div>
+        <div class="subTitle">
+          <div class="infoTit">
+            <h5>Can i use frontend Mentor projects in my portfolio?</h5>
+            <img src="./assets/images/icon-plus.svg" alt="Sign" />
+          </div>
+          <p class="para"></p>
+        </div>
+        <div class="ruler"></div>
+        <div class="subTitle">
+          <div class="infoTit">
+            <h5>How can i get help if I'm stuck on a challenge?</h5>
+            <img src="./assets/images/icon-plus.svg" alt="minusSign" />
+          </div>
+          <p class="para"></p>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Emmanuel Saura</a>.
+    </div>
+
+    <script>
+      function hideshow() {
+        document.getElementById("para1").style.height = Null;
+      }
+    </script>
+  </body>
+</html>
